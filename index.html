@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ben ~ </title>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      border-radius: 20px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      margin: 20px 0;
+    }
+
+    .photo-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 40px 0;
+    }
+
+    .photo-gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .affirmation {
+      margin-top: 50px;
+      font-style: italic;
+      font-size: 1.5em;
+      animation: fadeLoop 8s infinite;
+    }
+
+    @keyframes fadeLoop {
+      0%, 100% { opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+    }
+
+    .surprise {
+      margin-top: 60px;
+    }
+
+    .reveal-btn {
+      background-color: #fff;
+      color: #000;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .reveal-btn:hover {
+      background-color: #f4c2c2;
+    }
+
+    .hidden-message {
+      margin-top: 20px;
+      display: none;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <h1>Ben </h1>
+    <p>
+
+      Good Morning :D    <br>
+         <br>
+
+      I don't do sappiness so bare with me pls    <br>
+         <br>
+I just wanted to do something small for you, no particular reasoning or anything. I do think I've been nonverbal recently though, and quite pissy.  <br>
+      
+      <br>
+    
+      <strong> Enjoy? </strong>
+    </p>
+
+    <div class="photo-gallery">
+      <img src="photo1.jpg" alt="Cutie Patootie 1">
+      <img src="photo2.jpg" alt="Cutie Patootie 2">
+      <img src="photo3.jpg" alt="Cutie Patootie 3">
+    </div>
+
+    <p>
+       I’ve been thinking a bit lately and just wanted to say a few things...  <br>
+
+We’ve known each other for a long time, but being with you like this now feels really good. I’m honestly just really happy about where we are. <br>
+
+I miss you a lot when you’re not around — more than i expected to. I really like how comfortable you are with me. 
+I know it hasn’t been that long since we started seeing each other, but i already really appreciate the small things you do for me. I like spending time with you, plain and simple.  <br>
+
+<br> That’s all really — just wanted you to know &#128578;
+    </p>
+
+    <div class="affirmation">
+      I love you.
+    </div>
+
+    <!-- Surprise Section -->
+    <div class="surprise">
+      <button class="reveal-btn" onclick="document.getElementById('secret').style.display='block'; this.style.display='none';">
+        Click!!!
+      </button>
+      <div id="secret" class="hidden-message">
+       You are always my cutie patootie.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
